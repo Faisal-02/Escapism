@@ -35,14 +35,16 @@ private:
 	UStaticMeshComponent* GeneratorMesh;
 
 	UPROPERTY(EditAnywhere, Category = "Collision")
-	class UBoxComponent* BoxCollision;
+	class UBoxComponent* BoxComp;
 
 	UPROPERTY(VisibleAnywhere, Category = "Run Time")
 	AGameEntity* GameEntity;
 	
 	//-----Functions-----//
 	UFUNCTION()
-	void OnGeneratorBoxTrigger(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
-	
+	void OnGeneratorBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
+
+	UFUNCTION()
+	void OnGeneratorEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	
 };
