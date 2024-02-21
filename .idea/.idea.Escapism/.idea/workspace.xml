@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1030f958-7479-4190-8ebd-4eb8b681a58f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_ElectricityGenerator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_ElectricityGenerator.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.h" afterDir="false" />
-    </list>
+    <list default="true" id="1030f958-7479-4190-8ebd-4eb8b681a58f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +161,7 @@
       <workItem from="1708239263412" duration="8150000" />
       <workItem from="1708522528729" duration="355000" />
       <workItem from="1708522961402" duration="4753000" />
-      <workItem from="1708536381776" duration="3653000" />
+      <workItem from="1708536381776" duration="4260000" />
     </task>
     <servers />
   </component>
