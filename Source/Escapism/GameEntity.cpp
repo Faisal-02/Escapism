@@ -32,7 +32,7 @@ void AGameEntity::BeginPlay()
 	UGameplayStatics::GetPlayerController(GetWorld(), 0) -> bShowMouseCursor = true;
 
 	
-	GameHUDWidget = Cast<UGameHUDWidget>(CreateWidget(BPGameHudClass));
+	GameHUDWidget = Cast<UGameHUDWidget>(CreateWidget(GetWorld(), BPGameHudClass));
 	GameHUDWidget->AddToViewport();
 }
 
@@ -66,4 +66,7 @@ void AGameEntity::MoveRight(const float inputValue)
 	AddMovementInput(GetActorRightVector() * inputValue);
 }
 
-
+UGameHUDWidget* AGameEntity::GetGameHUD()
+{
+	return GameHUDWidget;
+}

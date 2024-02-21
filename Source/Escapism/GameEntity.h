@@ -32,7 +32,7 @@ public:
 
 private:
 	//-----Variables-----//
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, Category = "HUD")
 	TSubclassOf<UGameHUDWidget> BPGameHudClass;
 	
 	//-----Pointers-----//
@@ -42,6 +42,7 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, Category = "Component")
 	class USpringArmComponent* SpringArmComponent;
 
+protected:
 	UPROPERTY(VisibleAnywhere)
 	UGameHUDWidget* GameHUDWidget;
 
@@ -51,4 +52,6 @@ private:
 	//-----Functions-----//
 	void MoveForward(const float inputValue);
 	void MoveRight(const float inputValue);
+public:
+	UGameHUDWidget* GetGameHUD();
 };

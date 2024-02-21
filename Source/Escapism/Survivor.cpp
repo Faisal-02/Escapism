@@ -3,3 +3,9 @@
 
 #include "Survivor.h"
 
+
+void ASurvivor::BeginPlay()
+{
+	Super::BeginPlay();
+	
+}

@@ -17,7 +17,7 @@ class ESCAPISM_API UGameHUDWidget : public UUserWidget
 	virtual void NativeConstruct() override;
 
 
-private:	
+
 	//-----Variables-----//
 	
 	//-----Pointers-----//
@@ -25,4 +25,7 @@ private:
 	class UProgressBar* GeneratorProgressBar;
 	
 	//-----Functions-----//
+public:
+	void ShowGeneratorProgressBar();
+	void HidGeneratorProgressBar();
 };

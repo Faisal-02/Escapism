@@ -6,7 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "ElectricityGenerator.generated.h"
 
-
+class AGameEntity;
+class UGameHUDWidget;
 UCLASS()
 class ESCAPISM_API AElectricityGenerator : public AActor
 {
@@ -35,6 +36,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Collision")
 	class UBoxComponent* BoxCollision;
+
+	UPROPERTY(VisibleAnywhere, Category = "Run Time")
+	AGameEntity* GameEntity;
 	
 	//-----Functions-----//
 	UFUNCTION()

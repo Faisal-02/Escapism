@@ -12,7 +12,7 @@ class ESCAPISM_API ASurvivor : public AGameEntity
 {
 	GENERATED_BODY()
 
-
+virtual void BeginPlay() override;
 
 private:
 //-----Variables-----//
