@@ -13,6 +13,8 @@ class ESCAPISM_API ASurvivor : public AGameEntity
 	GENERATED_BODY()
 
 virtual void BeginPlay() override;
+	
+virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
 //-----Variables-----//
@@ -22,7 +24,7 @@ private:
 
 //-----Functions-----//
 
-
+virtual void PlayerInteraction() override;
 
 
 	

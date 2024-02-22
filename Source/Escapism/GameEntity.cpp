@@ -66,6 +66,14 @@ void AGameEntity::MoveRight(const float inputValue)
 	AddMovementInput(GetActorRightVector() * inputValue);
 }
 
+void AGameEntity::PlayerInteraction()
+{
+	//Do nothing, I will override this in children cuz its will have different actions
+	//Overall this function will handle the interaction with world environment (Game World) With E Button.
+
+	UE_LOG(LogTemp, Warning, TEXT("i am GameEntity class"));
+}
+
 UGameHUDWidget* AGameEntity::GetGameHUD()
 {
 	return GameHUDWidget;

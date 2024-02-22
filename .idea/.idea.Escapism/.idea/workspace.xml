@@ -9,7 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1030f958-7479-4190-8ebd-4eb8b681a58f" name="Changes" comment="" />
+    <list default="true" id="1030f958-7479-4190-8ebd-4eb8b681a58f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Killer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_GamePlayGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_GamePlayGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/GameEntity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameEntity.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/GameEntity.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameEntity.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/Killer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Killer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/Killer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Killer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/Survivor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Survivor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/Survivor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Survivor.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,6 +174,7 @@
       <workItem from="1708522528729" duration="355000" />
       <workItem from="1708522961402" duration="4753000" />
       <workItem from="1708536381776" duration="4260000" />
+      <workItem from="1708584296111" duration="2406000" />
     </task>
     <servers />
   </component>

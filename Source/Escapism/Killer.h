@@ -13,5 +13,17 @@ UCLASS()
 class ESCAPISM_API AKiller : public AGameEntity
 {
 	GENERATED_BODY()
+
+virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
+
+	//-----Variables-----//
+	
+	
+	//-----Pointers-----//
+
+	//-----Functions-----//
+
+	virtual void PlayerInteraction() override;
+
 	
 };

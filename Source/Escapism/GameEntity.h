@@ -52,6 +52,10 @@ protected:
 	//-----Functions-----//
 	void MoveForward(const float inputValue);
 	void MoveRight(const float inputValue);
+	virtual void PlayerInteraction();
+
+
+	
 public:
 	UGameHUDWidget* GetGameHUD();
 };
