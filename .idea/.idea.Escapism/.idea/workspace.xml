@@ -10,11 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1030f958-7479-4190-8ebd-4eb8b681a58f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Killer.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Input_System/Actions/IA_Move.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Input_System/IMC_Player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_ElectricityGenerator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_ElectricityGenerator.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_GamePlayGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_GamePlayGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Killer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Killer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Survivor_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Survivor_1.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/Escapism.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Escapism.Build.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Escapism/GameEntity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameEntity.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Escapism/GameEntity.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameEntity.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Escapism/Killer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Killer.cpp" afterDir="false" />
@@ -174,7 +180,9 @@
       <workItem from="1708522528729" duration="355000" />
       <workItem from="1708522961402" duration="4753000" />
       <workItem from="1708536381776" duration="4260000" />
-      <workItem from="1708584296111" duration="2406000" />
+      <workItem from="1708584296111" duration="2961000" />
+      <workItem from="1708948416154" duration="9852000" />
+      <workItem from="1708996838602" duration="2738000" />
     </task>
     <servers />
   </component>

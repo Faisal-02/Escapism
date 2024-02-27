@@ -3,21 +3,28 @@
 
 #include "Survivor.h"
 
+#include "Kismet/GameplayStatics.h"
+#include "EnhancedInputSubsystems.h"
+
 
 void ASurvivor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	SurvivorController = UGameplayStatics::GetPlayerController(this, 0);
+
+	if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(SurvivorController -> GetLocalPlayer()))
+	{
+		Subsystem -> AddMappingContext(PlayerMappingContext, 0);
+	}
+	
 	
 }
 
-void ASurvivor::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ASurvivor::PlayerInteraction(const FInputActionValue& Value)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	
-	PlayerInputComponent -> BindAction("Interaction", IE_Pressed ,this, &ASurvivor::PlayerInteraction);
 }
 
-void ASurvivor::PlayerInteraction()
-{
-	UE_LOG(LogTemp, Warning, TEXT("i am survival class"));
-}
+
+

@@ -4,9 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "InputAction.h"
 #include "GameEntity.generated.h"
 
+
 class UGameHUDWidget;
+class UInputMappingContext;
+class UInputAction;
 
 UCLASS()
 class ESCAPISM_API AGameEntity : public ACharacter
@@ -20,15 +24,7 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
 private:
 	//-----Variables-----//
@@ -46,15 +42,22 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	UGameHUDWidget* GameHUDWidget;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Input")
+	UInputMappingContext* PlayerMappingContext;
+	
+	UPROPERTY(EditDefaultsOnly, Category = "Input")
+	UInputAction* MoveAction;
 
-
+	UPROPERTY(EditDefaultsOnly, Category = "Input")
+	UInputAction* LookAction;
 	
 	//-----Functions-----//
-	void MoveForward(const float inputValue);
-	void MoveRight(const float inputValue);
-	virtual void PlayerInteraction();
-
-
+	
+	void Move(const FInputActionValue& Value);
+	
+	void Look(const FInputActionValue& Value);
+	
+	virtual void PlayerInteraction(const FInputActionValue& Value);
 	
 public:
 	UGameHUDWidget* GetGameHUD();

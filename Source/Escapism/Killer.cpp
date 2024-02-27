@@ -2,15 +2,23 @@
 
 
 #include "Killer.h"
+#include "EnhancedInputSubsystems.h"
+#include "Kismet/GameplayStatics.h"
 
-void AKiller::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+
+void AKiller::BeginPlay()
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	Super::BeginPlay();
 	
-	PlayerInputComponent -> BindAction("Interaction", IE_Pressed ,this, &AKiller::PlayerInteraction);
+	KillerController = UGameplayStatics::GetPlayerController(this, 0);
+
+	if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(KillerController -> GetLocalPlayer()))
+	{
+		Subsystem -> AddMappingContext(PlayerMappingContext, 0);
+	}
 }
 
-void AKiller::PlayerInteraction()
+void AKiller::PlayerInteraction(const FInputActionValue& Value)
 {
-	UE_LOG(LogTemp, Warning, TEXT("i am Killer class"));
+
 }
