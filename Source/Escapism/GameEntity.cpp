@@ -8,6 +8,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "EnhancedInputComponent.h"
 
 // Sets default values
 AGameEntity::AGameEntity()
@@ -36,45 +37,59 @@ void AGameEntity::BeginPlay()
 	GameHUDWidget->AddToViewport();
 }
 
-// Called every frame
-void AGameEntity::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
-// Called to bind functionality to input
 void AGameEntity::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent -> BindAxis("Forward", this, &AGameEntity::MoveForward);
-	PlayerInputComponent -> BindAxis("Right", this, &AGameEntity::MoveRight);
+	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+	{
+		EnhancedInputComponent -> BindAction(MoveAction, ETriggerEvent::Triggered, this, &AGameEntity::Move);
 
-	PlayerInputComponent -> BindAxis("Turn", this, &ACharacter::AddControllerYawInput);
-	PlayerInputComponent -> BindAxis("Lockup", this, &ACharacter::AddControllerPitchInput);
+		EnhancedInputComponent -> BindAction(LookAction, ETriggerEvent::Triggered, this, &AGameEntity::Look);
+	}
 	
-}
-
-void AGameEntity::MoveForward(const float inputValue)
-{
-	AddMovementInput(GetActorForwardVector() * inputValue);
-}
-
-void AGameEntity::MoveRight(const float inputValue)
-{
-	AddMovementInput(GetActorRightVector() * inputValue);
-}
-
-void AGameEntity::PlayerInteraction()
-{
-	//Do nothing, I will override this in children cuz its will have different actions
-	//Overall this function will handle the interaction with world environment (Game World) With E Button.
-
-	UE_LOG(LogTemp, Warning, TEXT("i am GameEntity class"));
 }
 
 UGameHUDWidget* AGameEntity::GetGameHUD()
 {
-	return GameHUDWidget;
+	return  GameHUDWidget;
 }
+
+void AGameEntity::Move(const FInputActionValue& Value)
+{
+	//This will get the value of the InputAction 
+	const FVector2D MoveValue = Value.Get<FVector2D>();
+
+	
+	//This will add the Forward movement to Controller
+	AddMovementInput(GetActorForwardVector(), MoveValue.X);
+
+	//This will add the Right movement to Controller
+	AddMovementInput(GetActorRightVector(), MoveValue.Y);
+}
+
+void AGameEntity::Look(const FInputActionValue& Value)
+{
+	//This will get the value of the InputAction 
+	const FVector2D LookValue = Value.Get<FVector2D>();
+
+	//This will add the Yaw movement to Controller
+	AddControllerYawInput(LookValue.X);
+
+	//This will add the Pitch movement to Controller
+	AddControllerPitchInput(LookValue.Y);
+
+	
+}
+
+void AGameEntity::PlayerInteraction(const FInputActionValue& Value)
+{
+	//Do nothing, I will override this in children cuz its will have different actions
+	//Overall this function will handle the interaction with world environment (Game World) With E Button.
+
+	
+}
+
+
+
+

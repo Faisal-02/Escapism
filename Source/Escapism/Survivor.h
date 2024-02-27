@@ -12,19 +12,21 @@ class ESCAPISM_API ASurvivor : public AGameEntity
 {
 	GENERATED_BODY()
 
-virtual void BeginPlay() override;
-	
-virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void BeginPlay() override;
+
 
 private:
-//-----Variables-----//
+	//-----Variables-----//
 	
 	
-//-----Pointers-----//
+	//-----Pointers-----//
+	
+	UPROPERTY(VisibleAnywhere)	
+	APlayerController* SurvivorController;
+	
+	//-----Functions-----//
 
-//-----Functions-----//
-
-virtual void PlayerInteraction() override;
+	virtual void PlayerInteraction(const FInputActionValue& Value) override;
 
 
 	

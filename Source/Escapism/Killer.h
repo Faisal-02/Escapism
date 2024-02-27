@@ -13,17 +13,19 @@ UCLASS()
 class ESCAPISM_API AKiller : public AGameEntity
 {
 	GENERATED_BODY()
-
-virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
-
+virtual void BeginPlay() override;
 	//-----Variables-----//
 	
 	
 	//-----Pointers-----//
+	
+	UPROPERTY(VisibleAnywhere)	
+	APlayerController* KillerController;
 
+	
 	//-----Functions-----//
 
-	virtual void PlayerInteraction() override;
+	virtual void PlayerInteraction(const FInputActionValue& Value) override;
 
 	
 };
