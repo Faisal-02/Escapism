@@ -46,11 +46,12 @@ void AGameEntity::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 		EnhancedInputComponent -> BindAction(MoveAction, ETriggerEvent::Triggered, this, &AGameEntity::Move);
 
 		EnhancedInputComponent -> BindAction(LookAction, ETriggerEvent::Triggered, this, &AGameEntity::Look);
+		
 	}
 	
 }
 
-UGameHUDWidget* AGameEntity::GetGameHUD()
+UGameHUDWidget* AGameEntity::GetGameHUD() const
 {
 	return  GameHUDWidget;
 }
@@ -78,16 +79,19 @@ void AGameEntity::Look(const FInputActionValue& Value)
 
 	//This will add the Pitch movement to Controller
 	AddControllerPitchInput(LookValue.Y);
-
-	
 }
 
-void AGameEntity::PlayerInteraction(const FInputActionValue& Value)
+void AGameEntity::InteractWithGenerator(const FInputActionValue& Value)
 {
 	//Do nothing, I will override this in children cuz its will have different actions
 	//Overall this function will handle the interaction with world environment (Game World) With E Button.
 
 	
+}
+
+void AGameEntity::StopInteractWithGenerator(const FInputActionValue& Value)
+{
+	//Do nothing, I will override this in children cuz its will have different actions
 }
 
 

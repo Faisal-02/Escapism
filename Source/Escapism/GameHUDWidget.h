@@ -6,6 +6,7 @@
 #include "Blueprint/UserWidget.h"
 #include "GameHUDWidget.generated.h"
 
+class AElectricityGenerator;
 /**
  * 
  */
@@ -16,16 +17,28 @@ class ESCAPISM_API UGameHUDWidget : public UUserWidget
 
 	virtual void NativeConstruct() override;
 
-
-
 	//-----Variables-----//
 	
+	float ProgressBarPercent = 0.f;
+	
 	//-----Pointers-----//
+	
 	UPROPERTY(EditDefaultsOnly, Category = "Generator HUD",  meta = (BindWidget))
 	class UProgressBar* GeneratorProgressBar;
+
+	UPROPERTY(VisibleAnywhere, Category = "Run Time")
+	AElectricityGenerator* ElectricityGenerator;
+
+	
+	//-----Template-----//
+	
+	UPROPERTY(EditDefaultsOnly, Category = "Generator")
+	TSubclassOf<AElectricityGenerator> BPGeneratorClass;
+
 	
 	//-----Functions-----//
 public:
-	void ShowGeneratorProgressBar();
-	void HidGeneratorProgressBar();
+	void ShowGeneratorProgressBar() const;
+	void HidGeneratorProgressBar() const;
+	void SetGeneratorProgressBarPercent(float Value);
 };

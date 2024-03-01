@@ -18,7 +18,7 @@ void AKiller::BeginPlay()
 	}
 }
 
-void AKiller::PlayerInteraction(const FInputActionValue& Value)
+void AKiller::InteractWithGenerator(const FInputActionValue& Value)
 {
 
 }

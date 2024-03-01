@@ -25,7 +25,7 @@ virtual void BeginPlay() override;
 	
 	//-----Functions-----//
 
-	virtual void PlayerInteraction(const FInputActionValue& Value) override;
+	virtual void InteractWithGenerator(const FInputActionValue& Value) override;
 
 	
 };

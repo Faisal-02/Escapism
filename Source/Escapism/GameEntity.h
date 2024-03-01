@@ -39,7 +39,7 @@ private:
 	class USpringArmComponent* SpringArmComponent;
 
 protected:
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, Category = "Run Time")
 	UGameHUDWidget* GameHUDWidget;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Input")
@@ -57,8 +57,9 @@ protected:
 	
 	void Look(const FInputActionValue& Value);
 	
-	virtual void PlayerInteraction(const FInputActionValue& Value);
+	virtual void InteractWithGenerator(const FInputActionValue& Value);
+	virtual void StopInteractWithGenerator(const FInputActionValue& Value);
 	
 public:
-	UGameHUDWidget* GetGameHUD();
+	UGameHUDWidget* GetGameHUD() const;
 };
