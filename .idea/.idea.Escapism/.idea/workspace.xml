@@ -10,25 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1030f958-7479-4190-8ebd-4eb8b681a58f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/_Game/Input_System/Actions/IA_Interaction_Hold.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/_Game/Input_System/Actions/IA_Interaction_Released.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escapism/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_ElectricityGenerator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_ElectricityGenerator.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_GamePlayGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_GamePlayGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Survivor_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/BP_Survivor_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/BluePrint/UMG/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BluePrint/UMG/WBP_HUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Input_System/IMC_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Input_System/IMC_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Levels/MainLVL.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/ElectricityGenerator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/GameEntity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameEntity.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/GameEntity.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameEntity.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/GameHUDWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameHUDWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/GameHUDWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/GameHUDWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/Killer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Killer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/Killer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Killer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/Survivor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Survivor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Escapism/Survivor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/Survivor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/pickup_System.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/pickup_System.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Escapism/pickup_System.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Escapism/pickup_System.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +173,8 @@
       <workItem from="1709150114074" duration="135000" />
       <workItem from="1709152593154" duration="12263000" />
       <workItem from="1709214984383" duration="12303000" />
-      <workItem from="1709257356393" duration="632000" />
+      <workItem from="1709257356393" duration="1850000" />
+      <workItem from="1709267851027" duration="619000" />
     </task>
     <servers />
   </component>
